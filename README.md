@@ -12,3 +12,17 @@
         
         return head;
 ```
+```cpp
+ Node* constructLL(vector<int>& arr) {
+       Node*Head,*temp;
+      Head = new Node(arr[0]);
+       temp = Head;
+      
+       for(int i =1;i<arr.size();i++){
+           Node* a = new Node(arr[i]);
+           temp->next = a ;
+           temp  = temp->next;
+       }
+       return Head;
+    }
+    ```
